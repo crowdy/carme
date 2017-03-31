@@ -1,0 +1,19 @@
+{
+  "name": "carme",
+  "version": "0.1.0",
+  "description": "a jupyterlab extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf carme && rimraf jupyterlab",
+    "install": "node scripts/install.js",
+    "build:carme": "npm run clean && git clone --depth=1 https://github.com/jupyterlab/jupyterlab && mkdir carme && gulp jupyterlab && gulp carme_extension && cd carme && npm install && npm run install && npm run build",
+    "update:carme": "gulp carme_extension && cd carme && npm run build",
+    "run:carme": "python carme/run.py"
+  },
+  "author": "tonghyun kim",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
