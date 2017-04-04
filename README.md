@@ -3,6 +3,7 @@
 **[Contributing](#contributing)** |
 **[License](#license)** |
 **[Getting help](#getting-help)**
+**[Korean](https://github.com/crowdy/carme/blob/master/README.kr.md)**
 
 
 # Carme, a [JupyterLab](http://jupyterlab.github.io/jupyterlab/) extension
